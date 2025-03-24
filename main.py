@@ -32,9 +32,9 @@ from charts import (
     create_metric_gauges
 )
 
-# Load environment variables and configure
-load_dotenv()
-api_key = os.getenv('GOOGLE_API_KEY')
+if os.path.exists(".env"):
+    load_dotenv()  # Load from .env file in development
+api_key = os.getenv('GOOGLE_API_KEY')  # get from environment in production
 if api_key:
     genai.configure(api_key=api_key)
 
