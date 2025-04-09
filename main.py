@@ -228,7 +228,6 @@ def main():
         st.info("Please enter a product search term.")
         return
     st.write("Searching for products matching:", product_search_term)
-    st.dataframe(product_list.head(5).to_pandas(), use_container_width=True)
     # --- Filter products based on the search term ---
     filtered_products = product_list.filter(
         pl.col("product_name").str.to_lowercase().str.contains(product_search_term.lower())
