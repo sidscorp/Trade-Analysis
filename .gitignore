@@ -12,3 +12,6 @@ venv/
 
 # add CLAUDE.md to gitignore
 CLAUDE.md
+
+# add all pycache files to gitignore
+**/__pycache__/*
