@@ -1,2 +1,14 @@
 # add .csv files to gitignore
 *.csv
+
+# add processed data files to gitignore
+/data/processed/*
+
+# add virtual environment folders to gitignore
+venv/
+
+# add .log files to gitignore
+*.log
+
+# add CLAUDE.md to gitignore
+CLAUDE.md
